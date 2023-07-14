@@ -26,10 +26,9 @@ class Graph:
     if node2 in self.adj_list[node1]:
       self.adj_list[node1][node2] += 1
       return
-
-    else:
-      self.adj_list[node1][node2] = 1
-      self.edge_count += 1
+      
+    self.adj_list[node1][node2] = 1
+    self.edge_count += 1
 
   # Construção do Grafo de Deputados usando consumo de API
   def deputies_graph(self):
