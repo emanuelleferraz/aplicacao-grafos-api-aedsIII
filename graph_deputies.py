@@ -35,7 +35,7 @@ class Graph:
   def deputies_graph(self):
     favor = []
     against = []
-    a = AmountVotes()
+    a = amount_votes.AmountVotes()
     voting_ids = requests.get(
       "https://dadosabertos.camara.leg.br/api/v2/votacoes?dataInicio=2022-01-01&ordem=DESC&ordenarPor=dataHoraRegistro"
     )
