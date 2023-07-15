@@ -100,8 +100,8 @@ class Graph:
     dep_list = []
     with open("votacaoVotos-2022-graph.txt", 'w') as file:
       file.write(f"{self.node_count} {self.edge_count}\n")
-      for dep in self.adj_list:
-        for dep2 in self.adj_list[dep]:
-          if dep2 not in dep_list:
-            file.write(f"{dep} {dep2} {self.adj_list[dep][dep2]}\n")
-        dep_list.append(dep)
+      for deputy in self.adj_list:
+        for deputy2 in self.adj_list[deputy]:
+          if deputy not in dep_list:
+            file.write(f"{deputy} {deputy2} {self.adj_list[deputy][deputy2]}\n")
+        dep_list.append(deputy)
